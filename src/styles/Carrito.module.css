@@ -1,0 +1,15 @@
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardImg {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 12px;
+}

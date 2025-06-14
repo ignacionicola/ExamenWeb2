@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "nombre": "Remera básica",
+    "precio": 2500,
+    "categoria": "ropa",
+    "imagen": "https://kiddiekustoms.com.ar/wp-content/uploads/2020/07/rocknroll_01.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Zapatillas running",
+    "precio": 7200,
+    "categoria": "calzado",
+    "imagen": "https://i.pinimg.com/originals/55/81/b3/5581b3e45455deb6f8df0749362e4e20.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Gorra Adidas",
+    "precio": 1800,
+    "categoria": "accesorios",
+    "imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dc8dd312874a4b1db224aa8500e5db5b_9366/Gorra_Baseball_UNISEX_Blanco_FK0890_01_standard.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Jean azul",
+    "precio": 4800,
+    "categoria": "ropa",
+    "imagen": "https://acdn-us.mitiendanube.com/stores/943/997/products/jean-azul-medio-3f126b2d73d18c889317337673916806-1024-1024.jpg"
+  },
+
+ 
+  {
+    "id": 5,
+    "nombre": "Botines de fútbol",
+    "precio": 9500,
+    "categoria": "calzado",
+    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwccab9750/products/NIDJ5625-146/NIDJ5625-146-6.JPG"
+  },
+  {
+    "id": 6,
+    "nombre": "Gafas de sol",
+    "precio": 1500,
+    "categoria": "accesorios",
+    "imagen": "https://www.clandestinesun.com/cdn/shop/products/CS14002N_B_1800x.jpg?v=1650925029"
+  },
+  {
+    "id": 7,
+    "nombre": "Camisa de vestir",
+    "precio": 3500,
+    "categoria": "ropa",
+    "imagen": "https://i.pinimg.com/550x/96/2f/df/962fdf243d4a02152d5ed2690c9d331d.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Chancletas ",
+    "precio": 12000,
+    "categoria": "calzado",
+    "imagen": "https://m.media-amazon.com/images/I/51NKF24SeBL._AC_UF894,1000_QL80_DpWeblab_.jpg"
+  }
+ 
+]

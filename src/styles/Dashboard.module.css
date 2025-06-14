@@ -1,0 +1,30 @@
+.titulo {
+  font-size: 2rem;
+  color: #252925;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.card {
+  transition: transform 0.2s ease;
+   min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+.cardImg {
+  height: 180px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/*  agrego estilos para la card y el titulo  y despues le por separados los estilos*/
