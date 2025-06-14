@@ -1,8 +1,15 @@
 
 
+# Trabajo Individual : Ignacio Ricardo Nicola
+# Carrera: Desarrollo Web
+# Materia: Programacion Web 2
+
+
+
+
+
+
 # Tienda De Ignacio
-
-
 
 ## Cómo probar
 
