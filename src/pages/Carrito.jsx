@@ -8,7 +8,7 @@ const Carrito = () => {
 
   return (
     <div className="container mt-4">
-      <h2 className={styles.titulo}>🛒 Tu Carrito</h2>
+      <h2 className={styles.titulo}> Tu Carrito</h2>
 
       {/* Si el carrito está vacío, se muestra un mensaje */}
       {cart.length === 0 ? (

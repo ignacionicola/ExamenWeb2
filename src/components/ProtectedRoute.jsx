@@ -12,3 +12,5 @@ const ProtectedRoute = ({ children }) => {
 };
 
 export default ProtectedRoute;
+
+// no uso outlet porque no tengo rutas anidadas en el dashboard 
