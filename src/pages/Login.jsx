@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useAuthStore from '../store/authStore';
 import { loginUser } from '../services/authService';
@@ -8,8 +8,15 @@ const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-  const login = useAuthStore((state) => state.login);
+  const { login, isAuthenticated } = useAuthStore();
   const navigate = useNavigate();
+
+  // Verificar si ya está autenticado al cargar el componente
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/dashboard');
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,6 +28,11 @@ const Login = () => {
       setError('Usuario o contraseña incorrectos');
     }
   };
+
+  // Si ya está autenticado, no mostrar el formulario
+  if (isAuthenticated) {
+    return null; 
+  }
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">

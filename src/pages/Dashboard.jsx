@@ -10,6 +10,7 @@ const Dashboard = () => {
   const { isAuthenticated } = useAuthStore(); // Verifica que  el usuario está autenticado
   const navigate = useNavigate();
 
+  
   const [productos, setProductos] = useState([]);
   const [filtro, setFiltro] = useState('');
   const [categoria, setCategoria] = useState('todos');
@@ -30,24 +31,13 @@ const Dashboard = () => {
     return coincideTexto && coincideCategoria;
   });
 
-  // Función para cerrar sesión
-  const handleLogout = () => {
-    useAuthStore.getState().logout();
-    navigate('/login');
-  };
-
   return (
     <div className="container mt-4">
-      {}
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h2 className={styles.titulo}>Productos</h2>
-        <Button variant="danger" onClick={handleLogout}>
-          Cerrar sesión
-        </Button>
-
         <Button variant="primary" onClick={() => navigate('/carrito')}>
-        Ir al carrito
-       </Button>
+          Ir al carrito
+        </Button>
       </div>
 
       {/* Filtros */}

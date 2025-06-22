@@ -7,19 +7,32 @@ import useAuthStore from './store/authStore';
 import Carrito from './pages/Carrito';
 
 function App() {
-  const isAuthenticated = useAuthStore((state) => state.isAuthenticated); // para verificar si el usuario está autenticado
+  const { isAuthenticated, logout } = useAuthStore(); // para verificar si el usuario está autenticado
+  
+  const handleLogout = () => {
+    logout();
+    
+  };
+
   return (
     <>
         <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
           <div className="container">
           <Link className="navbar-brand" to="/">Tienda De Ignacio</Link>
-          <div>
+          <div className="d-flex align-items-center">
             <Link className="btn btn-outline-light me-2" to="/">Home</Link>
-            {!isAuthenticated && (
+            
+            {isAuthenticated ? (
+              <>
+                <Link className="btn btn-outline-light me-2" to="/dashboard">Dashboard</Link>
+                <Link className="btn btn-outline-light me-2" to="/carrito">Carrito</Link>
+                <button className="btn btn-danger" onClick={handleLogout}>
+                  Cerrar Sesión
+                </button>
+              </>
+            ) : (
               <Link className="btn btn-outline-light" to="/login">Login</Link>
             )}
-            
-            
           </div>
         </div>
       </nav>
@@ -34,7 +47,14 @@ function App() {
             </ProtectedRoute>
           }
         />
-         <Route path="/carrito" element={<Carrito />} />
+        <Route 
+          path="/carrito" 
+          element={
+            <ProtectedRoute>
+              <Carrito />
+            </ProtectedRoute>
+          } 
+        />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
